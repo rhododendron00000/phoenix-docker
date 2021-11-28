@@ -7,5 +7,3 @@ RUN apt-get update -y && \
   mkdir /app
 COPY . /app
 WORKDIR /app
-RUN mix deps.get && \
-  mix do compile

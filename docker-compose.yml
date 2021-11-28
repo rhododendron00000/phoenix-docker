@@ -4,7 +4,7 @@ services:
   phoenix:
     build:
       context: .
-    command: mix phx.server
+    command: mix deps.get && mix phx.server
     environment:
       PGUSER: postgres
       PGPASSWORD: postgres
